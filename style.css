@@ -72,8 +72,10 @@ section h2 {
 }
 
 .profile-img img {
-    max-width: 120px;
-    height: auto;
+    max-width: 100%;   
+    width: 350px;    
+    height: auto;       
+    border-radius: 6px;
 }
 
 .service-cards {
