@@ -72,12 +72,12 @@ section h2 {
 }
 
 .profile-img img {
-    width: 100%;        /* Tràn rộng theo khung chứa */
-    max-width: 600px;   /* Cho phép độ rộng tối đa lên tới 600px cho to rõ */
-    height: auto;       /* Giữ nguyên tỉ lệ ảnh không bị méo */
-    border-radius: 8px; /* Bo góc đẹp mắt */
+    width: 100%;      
+    max-width: 600px;  
+    height: auto;       
+    border-radius: 8px; 
     display: block;
-    margin: 0 auto;     /* Canh giữa hình ảnh */
+    margin: 0 auto;     
 }
 
 .service-cards {
