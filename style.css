@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,6 +12,7 @@ body {
     background-color: #f4f7f6;
 }
 
+/* Header */
 header {
     background: #023e8a;
     color: #fff;
@@ -18,7 +20,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
@@ -27,6 +29,7 @@ header h1 {
     text-align: center;
 }
 
+/* Navigation */
 nav ul {
     list-style: none;
     display: flex;
@@ -39,47 +42,55 @@ nav a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
+/* Main content */
 main {
     max-width: 900px;
+    width: 100%;
     margin: 2rem auto;
     padding: 0 1rem;
 }
 
+/* Sections */
 section {
     background: #fff;
     padding: 2rem;
     margin-bottom: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 section h2 {
     color: #023e8a;
-    margin-bottom: 1.0rem;
+    margin-bottom: 1rem;
     border-bottom: 2px solid #e0e0e0;
     padding-bottom: 0.5rem;
 }
 
+/* Profile image */
 .profile-img {
+    width: 100%;
     margin-top: 1rem;
     text-align: center;
 }
 
 .profile-img img {
-    width: 100%;      
-    max-width: 600px;  
-    height: auto;       
-    border-radius: 8px; 
     display: block;
-    margin: 0 auto;     
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
+    object-fit: contain;
 }
 
+/* Service cards */
 .service-cards {
     display: flex;
     gap: 1rem;
@@ -96,6 +107,7 @@ section h2 {
     border-radius: 4px;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 1.5rem;
@@ -104,13 +116,39 @@ footer {
     margin-top: 2rem;
 }
 
+/* Responsive */
 @media (max-width: 600px) {
+    header {
+        padding: 1.2rem 1rem;
+    }
+
+    header h1 {
+        font-size: 1.3rem;
+    }
+
     nav ul {
         flex-direction: column;
         align-items: center;
         gap: 0.5rem;
     }
+
+    main {
+        margin: 1rem auto;
+    }
+
+    section {
+        padding: 1.2rem;
+    }
+
+    .profile-img img {
+        max-width: 100%;
+    }
+
     .service-cards {
         flex-direction: column;
+    }
+
+    .card {
+        min-width: 100%;
     }
 }
